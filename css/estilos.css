@@ -1,0 +1,357 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background:#fff;
+    font-family: "Open-Sans",sans-serif;
+    font-size:10px;
+}
+.contenedor{
+    width:90%;
+    max-width:1000px;
+    /* background:#ccc; */
+    margin:auto;
+    overflow:hidden;
+}
+
+/* header */
+header{
+    background: url('../img/fondo.jpg') #49a3d6;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+
+}
+header .menu{
+    margin:40px 0;
+    text-align:right;
+
+}
+
+header .menu a{
+    margin: 0 20px;
+    color:#fff;
+    padding-bottom: 9px;
+    display :inline-block;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    font-size: 2em;
+}
+
+header .menu a:hover{
+    border-bottom:2px solid #fff;
+}
+
+header .contenedor-texto{
+    display :flex;
+    justify-content: center;
+    align-content:center;
+    margin :190px;
+
+}
+header .contenedor-texto .texto{
+    border:2px solid rgba(255,255,255,.5);
+    border-radius:2px;
+    display:inline-block;
+    text-align: center;
+    padding:20px 80px;
+
+
+
+}
+
+header .contenedor-texto .texto h1,
+header .contenedor-texto .texto h2{
+    color:#fff;
+    font-weight:300;
+    
+    margin:0;
+}
+
+header .contenedor-texto .texto .nombre{
+    margin-bottom:10px;
+    font-size:50px;
+    line-height:50px;
+}
+
+header .contenedor-texto .texto .profesion{
+    
+    font-size:25px;
+    line-height:25px;
+}
+
+/* main */
+.main .contenedor{
+    overflow: visible;
+}
+.main .acerca-de{
+    text-align:center;
+}
+
+.main .acerca-de .foto{
+    margin-top:-150px;
+
+}
+
+.main .acerca-de .foto img{
+    vertical-align: top;
+    border-radius:50%;
+    border:5px solid rgba(255,255,255,0.2);
+
+}
+.main .acerca-de .texto{
+
+    color:#5a5a5a;
+    font-weight:600px;
+    font-size:1.8em;
+    line-height:30px;
+    width:80%;
+    margin:40px auto 60px auto;
+}
+
+.main .acerca-de .texto .titulo{
+    font-size: 50px;
+    line-height:40px;
+    margin-bottom: 40px;
+    font-weight:400;
+    color:#dd820d;
+    text-align:center;
+}
+
+
+
+.main .acerca-de .texto .bold{
+    
+    color:#050505;
+    text-decoration:underline;
+   
+}
+/*Conocimientos*/
+.main .conocimientos{
+    background: #f2f2f2;
+    padding: 60px 10px;
+}
+.main .conocimientos .titulo{
+    font-size: 34px;
+    line-height:34px;
+    margin-bottom: 40px;
+    font-weight:300;
+    color:#323868;
+    text-align:center;
+}
+.main .conocimientos .container-conocimientos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+.flip-card {
+
+    background-color: transparent;
+    width: 100px;
+    height: 100px;
+    perspective: 1000px;
+    
+}
+
+.flip-card-inner {
+    border-radius: 50%;
+    position: relative;
+    width: 5rem;
+    height: 5rem;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.flip-card-front {
+    text-align: center;
+    border-radius: 50%;
+    background-color: #bbb;
+    color: black;
+}
+.flip-card-front .fab {
+    font-size:50px;
+    color:#fff;
+}
+
+
+.flip-card-back {
+    text-align: center;
+    border-radius: 50%;
+    background-color: #dd820d;
+    color: white;
+    transform: rotateY(180deg);
+}
+
+/* ******* */
+.main .trabajos{
+    background: #f2f2f2;
+    padding: 60px 0;
+}
+/* .main .trabajos .contenedor {
+    /* overflow: hidden; */
+
+/* } */ */
+.main .trabajos .titulo{
+    font-size: 34px;
+    line-height:34px;
+    margin-bottom: 40px;
+    font-weight:300;
+    color:#323868;
+    text-align:center;
+}
+
+.main .trabajos .contenedor-trabajos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap; 
+    justify-content: space-between;
+
+}
+.main .trabajos .contenedor-trabajos .trabajo{
+
+    width:23%;
+    margin-bottom: 40px;
+
+}
+
+.main .trabajos .contenedor-trabajos .trabajo .thumb{
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.main .trabajos .contenedor-trabajos .trabajo .thumb img{
+
+    width:100%;
+    vertical-align: top;
+    border-radius: 3px;
+}
+.main .trabajos .contenedor-trabajos .trabajo .descripcion{
+    text-align: center;
+
+}
+
+.main .trabajos .contenedor-trabajos .trabajo .nombre{
+    font-weight: 700;
+    color:#3895ea;
+    margin-bottom: 10px;
+}
+
+.main .trabajos .contenedor-trabajos .trabajo .categoria{
+    font-size: 14px;
+    color:#636363;
+    
+}
+
+footer .contacto{
+    padding:30px 10px 20px 10px;
+}
+
+footer .contacto .titulo{
+    font-size: 34px;
+    line-height:34px;
+    margin-bottom: 40px;
+    font-weight:300;
+    color:#323868;
+    text-align:center;
+}
+
+.contacto .texto{
+    margin-bottom: 50px;
+}
+.contacto p{
+    font-size:20px;
+    text-align: center
+}
+.contacto p a{
+    text-decoration: none;
+    color:#000
+}
+
+footer .redes{
+    background:#1e2b38;
+    padding:60px 0;
+}
+footer .redes .contenedor{
+    display:flex;
+    justify-content:center;
+    
+}
+
+footer .redes a{
+    color:#fff;
+    text-decoration: none;
+    text-align: center;
+    width: 100px;
+    display: block;  
+    padding: 15px 0;
+    border-radius: 3px;
+    font-size:60px;
+   
+    margin:0 20px;
+}
+
+footer .redes .twitter:hover{
+    background: #1da1f2;
+}
+footer .redes .facebook:hover{
+    background: #3b5998;
+}
+footer .redes .linkedin:hover{
+    background: #0077b5;
+}
+footer .redes .github:hover{
+    background: #4078c0;
+}
+
+/*MediaQueries*/
+@media screen and (max-width:800px){
+    header .menu{
+        text-align: center;
+    }
+    .main .trabajos .contenedor-trabajos .trabajo{
+        width:40%;
+        }
+}
+
+@media screen and (max-width:500px){
+    header .contenedor-texto{
+    
+        float:center;
+        margin-left:0;
+        margin-right:1px;
+
+
+    }
+    
+header .contenedor-texto .texto .nombre{
+    
+    font-size:30px;
+}
+
+header .contenedor-texto .texto .profesion{
+    font-size:15px;
+}
+footer .redes .contenedor{
+    flex-wrap: wrap;
+    padding: 20px 0;
+}
+
+}
