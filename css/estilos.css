@@ -16,7 +16,7 @@ body{
 
 /* header */
 header{
-    background: url('../img/fondo.jpg') #49a3d6;
+    background: url('https://javierblancofernandez.github.io/img/fondo.jpg') #49a3d6;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
